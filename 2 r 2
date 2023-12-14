@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int divi(int b)
+{
+    int i,nr=0;
+    for(i=1;i*i<b;i++)
+    {
+        if(b%i==0)
+        {
+            nr+=2;
+        }
+    }
+    return nr;
+}
+int main()
+{
+    int n,ok,i,d,a,nr=0,maxi=-1;
+    cin>>n;
+    for(i=6;nr<n;i++)
+    {
+        if(divi(i)==4)
+        {
+            cout<<i<<" ";
+            nr++;
+        }
+    }
+    return 0;
+
+}
