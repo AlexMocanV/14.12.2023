@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,nr=0,i,d,a;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        cin>>a;
+        nr=0;
+        for(d=2;d<=a;d++)
+        {
+            if(a%d==0)
+            {
+                nr++;
+            }
+        }
+        cout<<nr<<" ";
+    }
+    return 0;
+
+}
